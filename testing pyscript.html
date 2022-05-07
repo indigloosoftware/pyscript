@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Simple Clock Demo</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+   <!-- <script defer src="../build/pyscript.js"></script> -->
+
+    
+  </head>
+
+  <body>
+    
+    
+    <py-script>
+     # Python program to demonstrate
+# strftime() function
+
+
+from datetime import datetime as dt
+
+# Getting current date and time
+now = dt.now()
+print("Without formatting", now)
+
+# Example 1
+s = now.strftime("%a %m %y")
+print('\nExample 1:', s)
+
+# Example 2
+s = now.strftime("%A %-m %Y")
+print('\nExample 2:', s)
+
+# Example 3
+s = now.strftime("%-I %p %S")
+print('\nExample 3:', s)
+
+# Example 4
+s = now.strftime("%-j")
+print('\nExample 4:', s)
+
+    </py-script>
+  </body>
+</html>

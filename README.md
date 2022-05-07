@@ -1,51 +1,40 @@
-# PyScript
+# PyScript Demonstrator
 
-## What is PyScript
+A simple webapp to demonstrate the capabilities of PyScript.
 
-### Summary
-PyScript is a Pythonic alternative to Scratch, JSFiddle or other "easy to use" programming frameworks, making the web a friendly, hackable, place where anyone can author interesting and interactive applications.
+## Getting started
 
-To get started see [GETTING-STARTED](GETTING-STARTED.md).
+1. If you don't already have Node.js, install it. The official installer for the
+   LTS version of Node is available from [nodejs.org](https://nodejs.org/).
 
-For examples see [the pyscript folder](pyscriptjs).
+2. If you don't already have Rollup, install it. Rollup can be installed as a
+   global resource using:
 
-### Longer Version
-PyScript is a meta project that aims to combine multiple open technologies to create a framework for users to use Python (and other languages) to create sophisticated applications in the browser. It highly integrates with the way the DOM works in the browser and allows users to add logic, in Python, in a way that feels natural to web as well as Python developers.
+       $ npm install --global rollup
 
-## Try PyScript
+3. Install the demo apps requirements:
 
-To try PyScript, import the appropriate pyscript files to your html page with:
-```html
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-```
-At that point, you can then use PyScript components in your html page. PyScript currently implements the following elements:
+       $ npm install
 
-* `<py-script>`: that can be used to define python code that is executable within the web page. The element itself is not rendered to the page and only used to add logic
-* `<py-repl>`: creates a REPL component that is rendered to the page as a code editor and allows users to write code that can be executed
+4. Start the server:
 
-Check out the [pyscriptjs/examples](pyscriptjs/examples) folder for more examples on how to use it, all you need to do is open them in Chrome.
+       $ npm run dev
 
-## How to Contribute
+   This will compile the resources for the app, and start the development server.
 
-To contribute:
+5. When the compilation completes, it will display something like:
 
-* clone the repo `git clone https://github.com/pyscript/pyscript`
-* cd into the main project folder with `cd pyscriptjs`
-* install the dependencies with `npm install` - make sure to use nodejs version >= 16
-* run `npm run dev` to build and run the dev server. This will also watch for changes and rebuild when a file is saved
+         Your application is ready~! 🚀
 
-## Resources
+         - Local:      http://localhost:8080
+         - Network:    Add `--host` to expose
 
-* [Discussion board](https://community.anaconda.cloud/c/tech-topics/pyscript)
-* [Home Page](https://pyscript.net/)
-* [Blog Post](https://engineering.anaconda.com/2022/04/welcome-pyscript.html)
+       ────────────────── LOGS ──────────────────
 
-## Notes
+   Once this is visible, open a browser at
+   [http://localhost:8080](http://localhost:8080). This will provide a list of
+   demos that you can run.
 
-* This is an extremely experimental project, so expect things to break!
-* PyScript has been only tested on Chrome, at the moment.
+## More information
 
-## Governance
-
-The [PyScript organization governance](https://github.com/pyscript/governance) is documented in a separate repository.
+There is a forum PyScript where you can discuss the project or ask questions at [https://community.anaconda.cloud/c/pyscript](https://community.anaconda.cloud/c/pyscript)
